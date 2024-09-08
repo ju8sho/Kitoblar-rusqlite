@@ -12,9 +12,11 @@ cd kitoblar-sqllite
 cargo build
 cargo run
 
-Foydalanish
+## Foydalanish
+
 Ma'lumotlar bazasi bilan ishlash misoli:
 
+'''rust
 use rusqlite::{params, Connection};
 
 let conn = Connection::open("kitoblar.db").unwrap();
