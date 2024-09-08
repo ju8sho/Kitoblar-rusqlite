@@ -11,12 +11,13 @@ git clone https://github.com/username/kitoblar-sqllite.git
 cd kitoblar-sqllite
 cargo build
 cargo run
+```
 
 ## Foydalanish
 
 Ma'lumotlar bazasi bilan ishlash misoli:
 
-'''rust
+```rust
 use rusqlite::{params, Connection};
 
 let conn = Connection::open("kitoblar.db").unwrap();
@@ -28,3 +29,4 @@ conn.execute(
     )",
     [],
 ).unwrap();
+```
